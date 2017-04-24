@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context="com.example.kh.vi.MainActivity">
+
+    <EditText
+        android:hint="ID"
+        android:id="@+id/etid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btninsert"
+        android:text="Insert"
+        android:layout_below="@+id/etid"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnupdate"
+        android:text="Update"
+        android:layout_below="@+id/btninsert"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btndelete"
+        android:text="Delete"
+        android:layout_below="@+id/btnupdate"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnloaddata"
+        android:text="Load Data"
+        android:layout_below="@+id/btndelete"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+   <GridView
+       android:id="@+id/griddata"
+       android:layout_below="@id/btnloaddata"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"></GridView>
+</RelativeLayout>
